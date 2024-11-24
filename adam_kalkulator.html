@@ -11,6 +11,8 @@
     <script type="text/javascript" src="./calculator.js"></script>
     <title>Adam Wasiluk - calculator</title>
 </head>
+
+
 <body onclick="myFunction()">
 <h1> Adam's calculator</h1>
 
@@ -37,45 +39,43 @@
 
     <tr>
         <td>
-            <button type="button" class="btn btn-dark" onclick=addingup(1)>1</button>
+            <button type="button" class="btn btn-dark" onclick=createNumberFromKeysPressed(1)>1</button>
 
         </td>
         <td>
-            <button type="button" class="btn btn-primary" onclick=addingup(2)>2</button>
+            <button type="button" class="btn btn-primary" onclick=createNumberFromKeysPressed(2)>2</button>
         </td>
         <td>
-            <button type="button" class="btn btn-link" onclick=addingup(3)>3</button>
+            <button type="button" class="btn btn-link" onclick=createNumberFromKeysPressed(3)>3</button>
 
         </td>
     </tr>
     <tr>
         <td>
-            <button type="button" class="btn btn-danger">4</button>
+            <button type="button" class="btn btn-link" onclick=" createNumberFromKeysPressed(4)">4</button>
         </td>
         <td>
-            <button type="button" class="btn btn-danger">5</button>
+            <button type="button" class="btn btn-link" onclick="createNumberFromKeysPressed(5)">5</button>
+        </td>
+        <td><button type="button" class="btn btn-link" onclick="createNumberFromKeysPressed(6)" >6</button>
+    </tr>
+    <tr>
+        <td>
+            <button type="button" class="btn btn-light" onclick="createNumberFromKeysPressed(7)">7</button>
         </td>
         <td>
-            <button type="button" class="btn btn-danger">6</button>
+            <button type="button" class="btn btn-dark" onclick="createNumberFromKeysPressed(8)">8</button>
+        </td>
+        <td>
+            <button type="button" class="btn btn-warning" onclick="createNumberFromKeysPressed(9)">9</button>
         </td>
     </tr>
     <tr>
         <td>
-            <button type="button" class="btn btn-light">7</button>
+            <button type="button" class="btn btn-info" onclick="createNumberFromKeysPressed(0)">0</button>
         </td>
         <td>
-            <button type="button" class="btn btn-dark">8</button>
-        </td>
-        <td>
-            <button type="button" class="btn btn-warning">9</button>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <button type="button" class="btn btn-info">0</button>
-        </td>
-        <td>
-            <button type="button" class="btn btn-succes>">.</button>
+            <button type="button" class="btn btn-info" onclick="createNumberFromKeysPressed(.)">.</button>
         </td>
         <td>
             <button type="button" class="btn btn-warning" onclick=cancelCalculator()>C</button>

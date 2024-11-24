@@ -1,21 +1,28 @@
-var box=1;
-function adamsFunctionToDisplaySomething(){
-    alert('someone pressed the button :-)')
-}
+var result="0";
+var operation = "";
+var numberOne = "";
+var numberTwo = "";
 
 
-function adampressedabutton(parameterA) {
-alert('someone pressed '.concat(parameterA))
-}
 
     function myFunction() {
-      box = box+1;
-      document.getElementById("myText").innerHTML = box;
+      document.getElementById("myText").innerHTML = result;
     }
+
     function cancelCalculator() {
-    box=-1;
+    operation = "";
+    numberOne = "";
+    numberTwo = "";
+    result="0";
 
     }
-function addingup(number1){
-box=box+number1;
-}
+
+    function createNumberFromKeysPressed(keyP1){
+    if (operation === ""){
+    numberOne = numberOne.concat(keyP1);
+    result = numberOne;
+    }else{
+    numberTwo = numberTwo.concat(keyP1);
+    result = numberTwo;
+    }
+    }
